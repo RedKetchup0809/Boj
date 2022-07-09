@@ -1,11 +1,15 @@
-Max = 0
-List = []
-Jayeonsu = int(input())
-for i in range(1, Jayeonsu+1):
-    N = int(input())
-    List.append(N)
-    
-for i in List:
-        if Max < i:
-            Max = i
-        Max.
+numbers = []
+
+for i in range(9):
+    a = int(input())
+    numbers.append(a)
+
+chadatgab_index = 0
+chadatgab = 0
+for i in range(0, 9):
+    if numbers[i] > chadatgab:
+        chadatgab = numbers[i]
+        chadatgab_index = i + 1
+
+print(chadatgab)
+print(chadatgab_index)
